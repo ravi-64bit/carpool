@@ -1,0 +1,110 @@
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  scroll-margin-top: 100px;
+  background-color: #1e2761;
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 48px;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color:#1e2761;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+input[type="number"],
+input[type="tel"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background-color: #1a5276;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid #190061;
+}
+
+footer {
+  background-color: #4169e1;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+
+footer a {
+  color: #c51111;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+      font-size: 36px;
+  }
+  
+  h2 {
+      font-size: 28px;
+  }
+  
+  form {
+      max-width: 300px;
+  }
+}

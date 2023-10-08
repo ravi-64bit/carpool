@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Cities</title>
+    <link rel="icon" href="dicon.png" type="x-icon">
+    <style>
+  
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 30px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            margin: 10px auto;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+       
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+        
+        }
+
+
+        li[style*="none"] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jump on to these Destinations ✈️</h1>
+
+   
+    <input type="text" id="citySearch" placeholder="Search for a city...">
+
+   
+    <ul id="cityList">
+        <li><a href="newdelhi.html">Delhi</a></li>
+        <li><a href="mumbai.html">Mumbai</a></li>
+        <li><a href="kolkata.html">Kolkata</a></li>
+        <li><a href="chennai.html">Chennai</a></li>
+        <li><a href="bengaluru.html">Bengaluru</a></li>
+        <li><a href="vizag.html">Vishakapatnam</a></li>
+        <li><a href="bhubaneshwar.html">Bhubaneshwar</a></li>
+        <li><a href="hyderabad.html">Hyderabad</a></li>
+        <li><a href="surat.html">Surat</a></li>
+        <li><a href="kochi.html">Kochi</a></li>
+    </ul>
+
+    <script>
+        document.getElementById('citySearch').addEventListener('input', function () {
+            var input, filter, ul, li, i, txtValue;
+            input = document.getElementById('citySearch');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById('cityList');
+            li = ul.getElementsByTagName('li');
+
+            for (i = 0; i < li.length; i++) {
+                txtValue = li[i].textContent || li[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = '';
+                } else {
+                    li[i].style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

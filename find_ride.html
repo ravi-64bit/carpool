@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>
+            Find a Ride
+        </title>
+        <link rel="icon" href="icon.png" type="x-icon">
+    </head>
+    <body>
+        <header>
+            <div style="text-align:center;margin: top 100px;">
+                <h1 style="font-size:80px">Find a Ride</h1>
+            </div>
+        </header>
+        <main>
+            <div style="text-align:center">
+                <form action="find_ride.php" method="post">
+                    <input type="text" name="Destination" placeholder="Enter your destination">
+                    <input type="submit" value="Find Rides">
+                  </form>
+            </div>
+        </main>
+    </body>
+    <style>
+        input[type="text"],
+input[type="datetime-local"],
+input[type="number"],
+input[type="tel"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+          }
+        header{
+            background-color: #4169e1;
+            color:white;
+        }
+        header h1{
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            font-size: 40px;
+        }
+    </style>
+</html>
